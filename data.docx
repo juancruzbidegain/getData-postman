@@ -37,3 +37,111 @@ Los codigos mas comunes a la hora de interactuar con un API son:
 403: Forbidden, yo no tengo acceso a ese recurso aunque este autenticado.
 404: Not Found, no existe el recurso que se esta intentando acceder.
 500: Interna Server Error, es un error que retorna el servidor cuando la solicitud no pudo ser procesada. Por lo general, si no tenemos acceso al backend, no tenemos control sobre los errores 500 que retorna un API.
+
+
+-----
+
+
+Play
+Mute
+
+
+Current Time 
+0:24
+/
+Duration 
+10:33
+1xPlayback Rate
+Captions
+Auto (720p)
+
+Picture-in-Picture
+Fullscreen
+Reportar un problema
+Llamados a un API con el método post utilizando Form Data
+Llamados a un API con el método post utilizando JSON
+Eduardo Álvarez
+Eduardo Álvarez
+Curso de Postman
+Curso de Postman
+
+Aportes
+54
+Preguntas
+10
+Marcadores
+0
+Más Votados
+Nuevos
+Sin Responder
+juancruzb
+Escribe aquí tu comentario
+Que bueno sería poder utilizar la API del curso para poder resolver los retos pero… NO FUNCIONA!
+
+Y nada que dan solución
+
+yo no se ni como instalarlo 😠
+
+Que bueno seria que se hubieran tomado la molestia de contestar 😕 y resolver esto.
+
+Aún sin funcionar 😦
+
+Simplemente es un demo, podrian probar usando alguna api de internet como : https://jsonplaceholder.typicode.com/
+
+Lo que importa es que entiendan el concepto, y puedan aplicarlo a cualquier API.
+
+Si no es con la API de forma local, tambien nos dieron una lista bastante larga de APIs publicas que funcionan perfecto para el curso, eso si, es necesario leer un poco mas, pero creo que hacer como borregos lo que hace el instructor no es tan bueno.
+
+Suerte.
+
+APIs publicas
+
+https://github.com/public-apis/public-apis
+
+estoy tratando de usar el API que dejaron https://jsonplaceholder.typicode.com/ pero nose como utilizarlo y ya me lei la documentacion poro no estoy seguro si estoy haciendo algo mal alquien me ayuda?
+
+Los errores fueron corregidos.
+
+f
+
+Ya está corregido en las lecturas pasadas, pero no es excusa. Estoy utilizando a la par la API de Rick and Morty…
+
+Si, en mi opinión debieron crear la API Rest con Node, (creo que todo developer tiene instalado Node) y los datos en un archivo db.json. Se complicaron mucho con la API en Django.
+
+Mi proyecto será crear mi API o terminar la API del curso.
+
+It works, !!, a ciegas lo ejecute pero trabaja, lo cual no deberia Captura de pantalla 2020-10-03 a la(s) 18.40.21.png
+Captura de pantalla 2020-10-03 a la(s) 18.27.39.png
+
+Igual creo que dure mas instalando las cosas en widnows q lo que durara el curso. pero te entiendo a mi tambien me gusto hacer que funcione.
+
+Pues para está fecha, me funciona la API y hasta el momento he podido trabajar los retos
+
+no solucionan aun
+
+Concuerdo
+
+Hay varias APIs públicas que se pueden usar de la misma forma 😃 (incluso es más interesante porque tienen más datos 😛).
+
+Ver más respuestas
+Actualicen la API que no sirve
+
+x2
+
+Si no pueden usar la api de platzi en local, en esta pagina https://jsonplaceholder.typicode.com/ pueden utilizarla para mandarle POST, GET y demas que siempre responde algo. No podran ver la informacion actualizada pero sirve para tener algo en postman
+
+Gracias, la verdad ayuda mucho, estaría genial que actualizaran la API de este curso 😪
+
+Gracias!
+
+Ver más respuestas
+1er Paso: Ver documentación y mirar como autenticarnos [con un user y password]
+2do Paso:El endpoint de la API en este caso es un espacio netamente para la generación de tokens de acceso, el cual seria …/api/api-token-auth/
+3er Paso: Agrega el user y la contraseña por medio de JSON en Postman teniendo seleccionado POST(al lado izquierdo de la url) y abajo vas a body>raw>text>JSON(esta opción se despliega si le das click a text en el nivel del menú que se encuentra raw)
+4to Paso: Verifica en Header el tipo de contenido que se va a enviar al servidor, en este caso es Key[Content-Key]-Value[application/json] ✔️(listo)
+5to paso: Escribe dentro de una llave el user y el password, todo va entre comillas, esto retornara un token (lo usaremos en el siguiente paso)
+6to paso:Si queremos agregar al servidor a un comentario tienes que poner el Headers el token del anterior paso, esto se hace añadiendo un espacio en el Headers de donde vamos a realizar el comentario** entonces, vamos a Headers y ponemos KEY=[Authorization] y el VALUE =[token aquí va el token]//Esta es la manera de tener acceso a esta API
+7to paso: Ya hecho el anterior paso con el endpoint …api/coments/ y en el body>raw>JSON podremos poner un coment especificado su destino con la palabra material, en este caso esa es la palabra clave para identificar en qué sección irá este cometnario.
+//Son apuntes, esto varia según la API según entiendo, no lo comprobe ya que la API no sirve sin embargo dejo un resumen
+
+
