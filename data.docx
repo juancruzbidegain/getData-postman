@@ -145,3 +145,4 @@ Ver más respuestas
 //Son apuntes, esto varia según la API según entiendo, no lo comprobe ya que la API no sirve sin embargo dejo un resumen
 
 
+Los enviroments son muy útiles. En mi caso, utilizo gran cantidad de endpoints para entorno local, de desarrollo y producción en 9 países. Si hay un cambio en una variable, se realiza una sola vez y no 11 veces por endpoint, para dar un ejemplo.
